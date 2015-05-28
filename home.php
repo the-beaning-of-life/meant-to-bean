@@ -13,12 +13,14 @@ Template Name: Home Page
 	    <div class="header">	
 		    <h1>Name of coffee shop</h1>
 		</div>
-		
+
+		 <h2><a href="<?php echo get_permalink( $menu.php ); ?>">Link to menu page</a></h2>
+
 
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-        <h2><a href="<?php echo get_permalink( $menu.php ); ?>">Link to menu page</a></h2>
+       
         <?php the_content(); ?>
 
       <?php endwhile; // end the loop?>
