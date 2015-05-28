@@ -16,6 +16,7 @@ Template Name: Home Page
 
 		 <h2><a href="<?php echo get_permalink( $menu.php ); ?>">Link to menu page</a></h2>
 
+		
 
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
