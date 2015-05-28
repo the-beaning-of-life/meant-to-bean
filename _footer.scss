@@ -1,4 +1,15 @@
 .social {
-	float: left;
-	margin: 0 auto;
+	text-align: center;
+	i {
+		margin: 0 25px;
+		font-size: 25px;
+		color: grey;
+	}
+	border-top: 1px solid grey;
+	padding-top: 30px;
+} 
+
+.copyright {
+	text-align: center;
+	color: grey;
 }
