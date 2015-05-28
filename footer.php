@@ -1,6 +1,12 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  	<div class="social clearifx">
+  		<i class="fa fa-instagram"></i>
+  		<i class="fa fa-twitter-square"></i>
+  		<i class="fa fa-facebook-square"></i>
+  	</div>
+    <p>&copy; Made with lots of <i class="fa fa-coffee"></i> by <a target="_blank" href="http://emilydelacruz.com">Emily, </a> <a target="_blank" href="http://karlymarie.com">Karly </a> & <a target="_blank" href="http://leerichardson.io/">Lee. </a>
+    <?php echo date('Y'); ?></p>
   </div>
 </footer>
 
