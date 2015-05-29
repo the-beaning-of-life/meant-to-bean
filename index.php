@@ -1,14 +1,31 @@
-<?php //index.php is the last resort template, if no other templates match ?>
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Home Page
+*/
+ ?>
+
+<?php get_header();  ?>
 
 <div class="main">
   <div class="container">
 
     <div class="content">
-    		<?php get_template_part( 'loop', 'index' );	?>
-    </div> <!--/.content -->
+	    <div class="header">	
+		    <h1>Name of coffee shop</h1>
+		</div>
 
-    <?php get_sidebar(); ?>
+		 <h2><a href="<?php echo get_permalink( $menu.php ); ?>">Link to menu page</a></h2>
+
+		
+
+      <?php // Start the loop ?>
+      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+       
+        <?php the_content(); ?>
+
+      <?php endwhile; // end the loop?>
+    </div> <!-- /,content -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

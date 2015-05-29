@@ -16,15 +16,19 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class('blogPost'); ?>>
 			<h2 class="entry-title">
         <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
           <?php the_title(); ?>
         </a>
       </h2>
 
+      <div class="feat-image">
+      	<?php the_post_thumbnail('medium'); set_post_thumbnail_size( 500, 500 ); // 50 pixels wide by 50 pixels tall, resize mode ?>
+      </div>
+
 			<section class="entry-content">
-				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
+				<?php the_excerpt('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
 				<?php wp_link_pages( array(
           'before' => '<div class="page-link"> Pages:',
           'after' => '</div>'

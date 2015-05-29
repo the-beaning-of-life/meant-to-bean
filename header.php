@@ -30,6 +30,7 @@
 
     <?php wp_nav_menu( array(
       'container' => false,
+      'menu_id' => 'main-menu',
       'theme_locations' => 'primary'
     )); ?>
   </div> <!-- /.container -->
