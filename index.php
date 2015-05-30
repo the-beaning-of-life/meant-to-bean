@@ -8,10 +8,10 @@ Template Name: Home Page
 
 <div class="mainPage">
 
-	<section class="heroImage">
+	<section class="heroImage" style="background-image: url('<?php the_field( 'main_image' ); ?>');">
 		<div class="container">
 			<div class="titleTagline">
-				<h1>
+				<h1 class="mainTitle">
 					<?php bloginfo( 'name' ); ?>
 		    </h1>
 		    <h2 class="subtitle">
@@ -30,7 +30,7 @@ Template Name: Home Page
   	</div>
   </section>
 
-  <section class="menuInfo">
+  <section class="menuInfo" style="background-image: url('<?php the_field( 'menu_panel_image' ); ?>');">
   	<div class="container">
   		<h2>Take a look at our menu</h2>
   		<div class="menuButton">
@@ -46,14 +46,17 @@ Template Name: Home Page
   		<div class="miniPostCont">
   			<?php $the_query = new WP_Query( 'showposts=3' ); ?>
   			<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-  			<div class="homeMiniPost">
-  				<a href="<?php the_permalink() ?>">
-  					<?php the_title(); ?>
-  				</a>
-  				<div class="miniPostImg">
-		  			<?php set_post_thumbnail_size( 300, 300 );the_post_thumbnail('medium'); ?>
-  				</div>
-  			</div>
+	  			<div class="homeMiniPost">
+	  				<a href="<?php the_permalink() ?>">
+	  					<?php the_title(); ?>
+	  				</a>
+	  				<div class="miniPostImg">
+			  			<?php set_post_thumbnail_size( 300, 300 );the_post_thumbnail('medium'); ?>
+	  				</div>
+	  				<p>
+	  					<?php echo get_the_date(); ?>
+	  				</p>
+	  			</div>
   			<?php endwhile;?>
   		</div>
   	</div>
