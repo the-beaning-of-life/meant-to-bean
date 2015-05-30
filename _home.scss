@@ -1,11 +1,146 @@
-.header {
-	background-image: url(http://www.freestockphotos.name/wallpaper-original/wallpapers/coffee-cups-brown-cappuccino-wallpaper-6372.jpg);
-	background-size: cover;
-	width: 1200px;
-	height: 100vh;
+.mainPage {
+	h2 {
+		font-family: 'Oswald';
+		font-weight: 300;
+		font-size: 45px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		color: grey;
+		margin: 0 auto;
+	}
 }
 
-.header h1 {
-	position: relative;
-	left: 500px;
+.heroImage {
+	background-image: url('http://www.freefoodphotos.com/imagelibrary/seafood/salmon_crispbread.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	top: -100px;
+	height: 90vh;
+	.titleTagline {
+		margin: 0 auto;
+		padding-top: 140px;
+	}
+	h1 {
+		max-width: 60%;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: 'Oswald';
+		font-weight: 400;
+		letter-spacing: 10px;
+		padding: 15px;
+		background-color: rgba(0,0,0,0.1);
+		margin: 0 auto;
+		color: #fff;
+	}
+	h2.subtitle {
+		text-transform: uppercase;
+		text-align: center;
+		background-color: rgba(0,0,0,0.1);
+		color: #fff;
+		font-family: 'Oswald';
+		font-weight: 300;
+		font-size: 30px;
+		letter-spacing: 4px;
+		margin: 25px 10%;
+		padding: 5px;
+	}
 }
+
+// WELCOME AND ABOUT ======================== 
+
+.welcomeAbout {
+	background-color: #fff;
+	color: grey;
+	text-align: center;
+	padding: 100px;
+	h2 {
+		
+	}
+	p {
+		font-family: 'Oswald';
+		font-weight: 300;
+		font-size: 15px;
+		letter-spacing: 2px;	
+	}
+}
+
+// MENU INFO ========================
+
+.menuInfo {
+	background-image: url('http://www.freefoodphotos.com/imagelibrary/herbs/chilis.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 100px;
+	h2 {
+		background-color: rgba(255,255,255,0.2);
+		color: #fff;
+		border: 10px solid rgba(255,255,255,0.7);
+		padding: 15px;
+		a {
+			color: #fff;
+		}
+	}
+	.menuButton {
+		max-width: 200px;
+		background-color: rgba(255,255,255,0.2);
+		padding: 15px;
+		border: 5px solid rgba(255,255,255,0.7);
+		margin: 25px auto;
+		a {
+			color: #fff;
+			text-transform: uppercase;
+			font-family: 'Oswald';
+			font-weight: 300;
+			font-size: 14px;
+			letter-spacing: 5px;
+		}
+	}
+}
+
+// BLOG INFO ======================== 
+
+.blogInfo {
+	padding: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	h3 {
+		font-family: 'Oswald';
+		font-weight: 300;
+		font-size: 15px;
+		letter-spacing: 4px;
+	}
+}
+
+.miniPostCont {
+	margin-top: 40px;
+	display: flex;
+	.homeMiniPost {
+		flex: 1 0 auto;
+		a {
+			color: grey;
+			font-family: 'Oswald';
+			font-weight: 300;
+			font-size: 15px;
+			letter-spacing: 3px;
+			padding: 5px 10px;
+			background-color: rgba(231,231,231,0.5);
+		}
+		.miniPostImg {
+			margin-top: 20px;
+		}
+	}
+}
+
+// PICTURE SECTION ======================== 
+
+
+
+
+
+
+
+
+
+
+
