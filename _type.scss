@@ -1,3 +1,10 @@
+body {
+	 font-family: 'Karla';
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: grey;
+}
+
 h1.logoText {
 	float: left;
 	margin: 0;
@@ -7,4 +14,31 @@ h1.logoText {
 		letter-spacing: 5px;
 		color: grey;
 	}
+}
+
+h2, h3 {
+	font-family: 'Oswald';
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: grey;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	font-family: 'Karla';
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+a {
+	text-decoration: none;
+	color: grey;
 }

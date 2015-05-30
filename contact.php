@@ -6,20 +6,18 @@ Template Name: Contact Page
 
 <?php get_header();  ?>
 
-<div class="main">
-  <div class="container">
-
-    <div class="content">
-      <?php // Start the loop ?>
-      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
-
-      <?php endwhile; // end the loop?>
+<div class="main-contact">
+	<div class="contact-content">
+      	<div class="contact-form clearfix">
+				<form action="login.php" class="login">
+					<h2><?php the_title(); ?></h2>
+					<input type="text" name="username" class="username" placeholder="Your Name">
+					<input type="email" name="email" class="email" placeholder="Your Email">
+					<textarea name="bio" class="bio" cols="30" rows="10" placeholder="Your message"></textarea>
+					<input type="submit" value="Send Email" class="submitButton">
+				</form>
+		</div>
     </div> <!-- /,content -->
-
-  </div> <!-- /.container -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
