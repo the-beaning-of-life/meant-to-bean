@@ -1,3 +1,8 @@
+.mainFooter {
+	border-top: 1px solid lightgrey;
+	padding-bottom: 20px;
+}
+
 .social {
 	text-align: center;
 	i {
@@ -5,11 +10,24 @@
 		font-size: 25px;
 		color: grey;
 	}
-	border-top: 2px solid grey;
-	padding-top: 30px;
+	padding-top: 20px;
 } 
 
-.copyright {
+.copyright, .mainFooter p {
 	text-align: center;
 	color: grey;
+	font-family: 'Oswald';
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 12px;
+	letter-spacing: 4px;	
+	margin-top: 20px;
+	a {
+		color: grey;
+		background-color: lightgrey;
+		padding: 2px 5px;
+		&:hover {
+			color: #000;
+		}
+	}
 }
