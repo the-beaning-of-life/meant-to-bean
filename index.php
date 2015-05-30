@@ -7,14 +7,34 @@ Template Name: Home Page
 <?php get_header();  ?>
 
 <div class="main">
+
+	<section class="heroImage">
+		<div class="container">
+			<h1>
+				<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+	        <?php bloginfo( 'name' ); ?>
+	      </a>
+	    </h1>
+    </div>
+	</section>
+
   <div class="container">
 
-    <div class="content">
+	
+
+  </div> 
+</div> <!-- /.main -->
+
+<?php get_footer(); ?>
+
+ <!--    <div class="content">
 	    <div class="header">	
 		    <h1>Name of coffee shop</h1>
 		</div>
 
-		 <h2><a href="<?php echo get_permalink( $menu.php ); ?>">Link to menu page</a></h2>
+		 <h2><a href="<?php echo get_permalink('$menu'); ?>">Link to menu page</a></h2>
+
+		 <?php $permalink = get_permalink( $id, $leavename ); ?> 
 
 		
 
@@ -25,9 +45,4 @@ Template Name: Home Page
         <?php the_content(); ?>
 
       <?php endwhile; // end the loop?>
-    </div> <!-- /,content -->
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
-
-<?php get_footer(); ?>
+    </div>  -->
