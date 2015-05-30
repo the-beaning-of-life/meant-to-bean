@@ -23,9 +23,9 @@ Template Name: Home Page
 
   <section class="welcomeAbout">
   	<div class="container">
-  		<h2>Hello and welcome to <?php bloginfo( 'name' ); ?>!</h2>
+  		<h2>Hello! Welcome to <?php bloginfo( 'name' ); ?>!</h2>
   		<p>
-  			We are a cafe thats works hard to offer you a selection of meals that are as fresh and sustainable as possible. 
+  			<?php the_field( 'about_info' ); ?>
   		</p>
   	</div>
   </section>
