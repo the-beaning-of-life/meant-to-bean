@@ -1,6 +1,6 @@
 .main-contact {
 
-	background: url(img/meringue_dessert.jpg) no-repeat center center fixed; 
+	background: url(images/image6.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,26 +12,28 @@
 	padding: 30px;
 }
 
-form.login 
-
-{
-	width: 50%;
-	background: rgba(255,255,255,.7);
+form.login {
+	width: 70%;
+	// background-color: rgba(255,255,255,0.2);
+	background-color: rgba(0,0,0,0.1);
 	padding: 30px;;
 	margin: 0 auto;
-	padding: 20px 10px 10px 10px;
+	padding: 20px 40px 10px 40px;
 	height: auto;
-	border: 2px solid white;
+	// border: 2px solid white;
+	border: 10px solid rgba(255,255,255,0.7);
 }
 
 form h2 {
 	text-align: center;
+	color: white;
 }
 
 input.username, input.email {
 	width: 47%;
 	padding: 10px;
-	border: 1px solid lightgrey;
+	// border: 1px solid lightgrey;
+	border: none;
 	font-size: 16px;
 	margin: 5px .5% 5px 1.5%;
 }
@@ -45,14 +47,15 @@ textarea.bio {
 	/*max-width: 447px; */
     max-height: 150px;
 	margin: 5px 1.5% 0 ;
-	border: 1px solid lightgrey;
+	// border: 1px solid lightgrey;
+	border: none;
 	font-size: 16px;
 	padding: 10px; 
 
 }
 
 input.submitButton {
-	background: #94b24d;
+	background: RGBA(146, 177, 92, .7);
 	width: 250px;
 	color: white;
 	font-size: 20px;
@@ -65,17 +68,16 @@ input.submitButton {
 	margin: 30px auto 30px;
 	display: block;
 	text-align: center;
-	padding-bottom: 5px;
 }
 input[type=submit].submitButton {
 	color: white;
 }
 
-// input.submitButton:hover {
-// 	text-decoration: underline;
-// }
+input.submitButton:hover {
+	background: RGBA(146, 177, 92, 1);
+}
 
 input:focus, textarea:focus {
-	box-shadow: 0 0 10px #94b24d;
+	box-shadow: 0 0 20px RGBA(146, 177, 92, 1);
 	outline:0;
 }
