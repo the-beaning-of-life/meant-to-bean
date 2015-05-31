@@ -1,9 +1,20 @@
+// VARIALBLES
+$mobile: "(max-width: 480px)";
+$mobile-landscape: "(max-height: 450px)";
+$tablet: "(max-width: 768px)";
+$small-desktop: "(max-width: 940px)";
+
+
 #mainNavHome {
 	// border-bottom: 1px solid lightgrey;
 }
 
 #main-menu {
 	float: right;
+	@media #{$mobile}, #{$tablet} {
+		float: none;
+		text-align: center;
+	} 
 }
 
 ul#main-menu {
@@ -11,13 +22,20 @@ ul#main-menu {
 	font-weight: 300;
 	font-size: 12px;
 	letter-spacing: 4px;	
-	margin-top: 10px;
+	margin-top: 30px;
+	@media #{$mobile} {
+		font-size: 11px;
+		letter-spacing: 3px;
+	} 
 	li {
 		a {
 			background-color: #fff;
 			color: grey;
 			padding-bottom: 5px;
 			margin: 15px 15px;
+			@media #{$mobile} {
+				margin: 10px 10px;
+			} 
 			&:hover {
 				border-bottom: 2px solid #000;
 			}
@@ -27,11 +45,24 @@ ul#main-menu {
 
 #mainNavHome {
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 10px;
 	background-color: rgba(255,255,255,0.5);
 }
 
-.logoText {
+#headerLogoText {
+	float: left;
 	text-align: center;
+	font-family: 'Oswald';
+	font-weight: 400;
+	letter-spacing: 5px;
+	a {
+		color: grey;
+	}
+	@media #{$tablet} {
+		float: none;
+	} 
+	@media #{$mobile} {
+		margin-bottom: 20px;
+	} 
 }
 

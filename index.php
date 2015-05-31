@@ -9,7 +9,7 @@ Template Name: Home Page
 <div class="mainPage">
 
 	<section class="heroImage" style="background-image: url('<?php the_field( 'main_image' ); ?>');">
-		<div class="container">
+		<div id="fadeInBox" class="container">
 			<div class="titleTagline">
 				<h1 class="mainTitle">
 					<?php bloginfo( 'name' ); ?>

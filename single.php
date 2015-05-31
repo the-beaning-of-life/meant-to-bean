@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
+  <div class="single-blog-container">
 
-    <div class="content">
+    <div class="single-blog-content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -13,7 +13,10 @@
             <?php hackeryou_posted_on(); ?>
           </div><!-- .entry-meta -->
 
-          <div class="entry-content">
+          <div class="single-entry-content">
+          <div class="single-image">
+            <?php the_post_thumbnail('large'); ?>
+          </div>
             <?php the_content(); ?>
             <?php wp_link_pages(array(
               'before' => '<div class="page-link"> Pages: ',
