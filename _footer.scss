@@ -1,6 +1,6 @@
 .mainFooter {
 	border-top: 1px solid lightgrey;
-	padding-bottom: 20px;
+	padding:0 20px 20px;
 }
 
 .social {
@@ -9,6 +9,9 @@
 		margin: 0 25px;
 		font-size: 25px;
 		color: grey;
+		&:hover {
+			color:black;
+		}
 	}
 	padding-top: 20px;
 } 
@@ -21,6 +24,7 @@
 	font-weight: 300;
 	font-size: 12px;
 	letter-spacing: 4px;	
+	line-height: 30px;
 	margin-top: 20px;
 	a {
 		color: grey;

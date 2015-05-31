@@ -14,9 +14,11 @@
 
 form.login {
 	width: 70%;
+		@media screen and (max-width: 575px) {
+					  		width: 90%;
+					  }
 	// background-color: rgba(255,255,255,0.2);
 	background-color: rgba(0,0,0,0.1);
-	padding: 30px;;
 	margin: 0 auto;
 	padding: 20px 40px 10px 40px;
 	height: auto;
@@ -36,21 +38,30 @@ input.username, input.email {
 	border: none;
 	font-size: 16px;
 	margin: 5px .5% 5px 1.5%;
+	@media screen and (max-width: 575px) {
+					  		width: 95%;
+					  }
+	font-family: 'Oswald';
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 3px;
 }
 
 textarea.bio {
 
 	width: 97%;
 	max-width: 97%;
-	/*width: 447px;*/
 	height: 100px;
-	/*max-width: 447px; */
     max-height: 150px;
 	margin: 5px 1.5% 0 ;
-	// border: 1px solid lightgrey;
 	border: none;
-	font-size: 16px;
 	padding: 10px; 
+	font-family: 'Oswald';
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 3px;
 
 }
 
@@ -68,6 +79,9 @@ input.submitButton {
 	margin: 30px auto 30px;
 	display: block;
 	text-align: center;
+		@media screen and (max-width: 575px) {
+					  		width: 95%;
+					  }
 }
 input[type=submit].submitButton {
 	color: white;
