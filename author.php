@@ -1,8 +1,17 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
-    <div class="content">
+
+  <div class="authorInfo">
+    <h1 id="authorName">Author Archives:
+      <a class="name" href="<?php echo get_author_posts_url( get_the_author_meta('ID') ); ?>">
+        <?php the_author(); ?>
+      </a>
+    </h1>
+  </div>
+
+  <div class="blog-container">
+    <div class="blog-content">
 
       <?php
       	/* Queue the first post, that way we know who
@@ -12,12 +21,6 @@
       	if ( have_posts() )
       		the_post();
       ?>
-
-      <h1>Author Archives:
-        <a class="name" href="<?php echo get_author_posts_url( get_the_author_meta('ID') ); ?>">
-          <?php the_author(); ?>
-        </a>
-      </h1>
 
       <?php
       	// If a user has filled out their description, show a bio on their entries.

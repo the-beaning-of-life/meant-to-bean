@@ -22,7 +22,7 @@
 
 <header id="mainNavHome">
   <div class="container clearfix">
-    <h1 class="logoText">
+    <h1 id="headerLogoText">
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
       </a>
