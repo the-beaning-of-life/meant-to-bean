@@ -26,23 +26,25 @@
 
 .menuTextContainer {
 	height: 200px;
-	padding: 50px 0;
+	padding-top: 50px;
 }
 
-.foodColumn img {
-	width: 200px;
-	height: 200px;	
+.menuTextContainer p {
+	padding-left: 50px;
+	padding-right: 50px;
 }
+
 
 .foodColumn {
 	float: left;
 	width: 33%;
 	text-align: center;
+	padding-top: 50px;
 }
 
 .foodColumn p {
 	width: 90%;
-	padding-left: 10%
+	padding-left: 10%;
 }
 
 .foodColumnContainer {
@@ -56,25 +58,36 @@
 	background-attachment: fixed;
 	
 	h2 {
-		text-align: center;
 		top: 150px;
 		position: relative;
 		max-width: 400px;
 	    text-transform: uppercase;
-	    text-align: center;
 	    font-family: 'Oswald';
 	    font-weight: 400;
-	    padding: 15px;
-	    background-color: rgba(0,0,0,0.1);
-	    color: #fff;
-	    margin: 0 auto;
-	   
+	    background-color: rgba(255,255,255,0.2);
+        color: #fff;
+        border: 10px solid rgba(255,255,255,0.7);
+        padding: 15px;
+	   margin: 0 auto;
 	}
 }
 
-.pastryColumn {
+.bakeryColumnContainer {
+	padding: 50px 0;
 
+	h2 {
+		color: #808080;
+		text-align: center;
+	}
 }
+
+.bakeryColumn {
+	float: left;
+	width: 33%;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
 
 p {
     font-family: 'Karla';
@@ -88,4 +101,27 @@ nav ul {
     font-weight: 300;
     font-size: 12px;
     letter-spacing: 4px;
+}
+
+//responsive
+
+@media (max-width: 850px) {
+	.foodColumn {
+		width: 100%;
+	}
+	.menuTextContainer {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 700px) {
+	.bakeryColumn {
+		float: none;
+		width: 100%;
+		padding-bottom: 50px;
+	}
+
+	.menuTextContainer {
+		margin-bottom: 100px;
+	}
 }
