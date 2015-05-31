@@ -6,18 +6,20 @@
 	background-attachment: fixed;
 
 	h1 {
-		position: relative;
-		max-width: 400px;
+		max-width: 60%;
         text-transform: uppercase;
         text-align: center;
         font-family: 'Oswald';
+        position: relative;
+        top: 35%;
         font-weight: 400;
+        font-size: 45px;
         letter-spacing: 10px;
         padding: 15px;
-        background-color: rgba(255,255,255,0.1);
-        color: #fff;
+        background-color: rgba(0,0,0,0.1);
+        border: 10px solid rgba(255,255,255,0.6);
         margin: 0 auto;
-        top: 250px;
+        color: #fff;
 	}
 }
 
@@ -27,32 +29,51 @@
 	padding: 50px 0;
 }
 
-.menuColumn img {
+.foodColumn img {
 	width: 200px;
 	height: 200px;	
 }
 
-.menuColumn {
+.foodColumn {
 	float: left;
 	width: 33%;
 	text-align: center;
 }
 
-.menuColumn p {
+.foodColumn p {
 	width: 90%;
 	padding-left: 10%
 }
 
-.menuColumnContainer {
-	margin-bottom: 50px;
+.foodColumnContainer {
+	padding-bottom: 50px;
 }
 
-.menuImageBanner {
-	background-image: url(../images/cinammonBun400.jpg);
+.menuBannerImage {
+	background-image: url(images/cinammonBun400.jpg);
+	background-size: cover;
+	height: 400px;
+	background-attachment: fixed;
+	
+	h2 {
+		text-align: center;
+		top: 150px;
+		position: relative;
+		max-width: 400px;
+	    text-transform: uppercase;
+	    text-align: center;
+	    font-family: 'Oswald';
+	    font-weight: 400;
+	    padding: 15px;
+	    background-color: rgba(0,0,0,0.1);
+	    color: #fff;
+	    margin: 0 auto;
+	   
+	}
 }
 
-.bakeryColumn, .coffeeColumn p {
-	width: 30%;
+.pastryColumn {
+
 }
 
 p {
