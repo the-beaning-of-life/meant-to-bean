@@ -9,9 +9,9 @@ Template Name: Contact Page
 <div class="main-contact">
 	<div class="contact-content">
       	<div class="contact-form clearfix">
-				<form action="login.php" class="login">
+				<form action="mail.php" method="POST" class="mail">
 					<h2><?php the_title(); ?></h2>
-					<input type="text" name="username" class="username" placeholder="Your Name">
+					<input type="text" name="name" class="username" placeholder="Your Name">
 					<input type="email" name="email" class="email" placeholder="Your Email">
 					<textarea name="bio" class="bio" cols="30" rows="10" placeholder="Your message"></textarea>
 					<input type="submit" value="Send Email" class="submitButton">
